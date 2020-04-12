@@ -21,8 +21,8 @@ begin
     case digit is
 
       when 0 => segments <= "0111111";
-      when 1 => segments <= "0111111";
-      when 2 => segments <= "0111111";
+      when 1 => segments <= "0000110";
+      when 2 => segments <= "1011011";
       when 3 => segments <= "1001111";
       when 4 => segments <= "1100110";
       when 5 => segments <= "1101101";
