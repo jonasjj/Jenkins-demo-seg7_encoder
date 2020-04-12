@@ -7,7 +7,9 @@ use pck_lib.sim.all;
 use pck_lib.types.all;
 
 entity seg7_encoder_tb is
-end seg7_encoder_tb; 
+end seg7_encoder_tb;
+
+library seg7_encoder_lib;
 
 architecture sim of seg7_encoder_tb is
 
@@ -19,8 +21,7 @@ architecture sim of seg7_encoder_tb is
 
 begin
 
-
-  DUT : entity seg7.seg7_encoder(rtl)
+  DUT : entity seg7_encoder_lib.seg7_encoder(rtl)
   port map (
     digit => digit,
     segments => segments
